@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.525e3ded.css",
+    "main.js": "/static/js/main.88d714b7.js",
+    "static/media/Sahil Kumar Resume.pdf": "/static/media/Sahil Kumar Resume.c9424a874915351ff0af.pdf",
+    "static/media/1690804412682.jpg": "/static/media/1690804412682.d77b91a231fc447ea083.jpg",
+    "index.html": "/index.html",
+    "static/media/blob4.svg": "/static/media/blob4.6f3aed6c7333a3faecea900ab2ffa61f.svg",
+    "static/media/blob1.svg": "/static/media/blob1.5cf33aa772aa139fd1e94f4b1708c6d6.svg",
+    "static/media/blob5.svg": "/static/media/blob5.5cf33aa772aa139fd1e94f4b1708c6d6.svg",
+    "static/media/blob2.svg": "/static/media/blob2.07340cd6a3f1bd3e73b21d533356ff79.svg",
+    "static/media/blob3.svg": "/static/media/blob3.9be8f59d9da05fbf90458f31c0edfc5f.svg",
+    "static/media/blob6.svg": "/static/media/blob6.07340cd6a3f1bd3e73b21d533356ff79.svg",
+    "main.525e3ded.css.map": "/static/css/main.525e3ded.css.map",
+    "main.88d714b7.js.map": "/static/js/main.88d714b7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.525e3ded.css",
+    "static/js/main.88d714b7.js"
+  ]
+}
