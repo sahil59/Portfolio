@@ -653,18 +653,16 @@ footer {
         flex-direction: column;
     }
 
-    .card {
-        > .card-title {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #fff;
-        }
+    .card .card-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #fff;
+    }
 
-        > .card-desc {
-            font-size: 1rem;
-            font-weight: 500;
-            color: #fff;
-        }
+    .card .card-desc {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #fff;
     }
 }
 
@@ -714,18 +712,18 @@ footer {
     .card {
         display: flex;
         transition: 0.5s ease-in-out;
+    }
 
-        > .card-title {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #fff;
-        }
+    .card .card-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #fff;
+    }
 
-        > .card-desc {
-            font-size: 5px;
-            font-weight: 400;
-            color: #fff;
-        }
+    .card .card-desc {
+        font-size: 5px;
+        font-weight: 400;
+        color: #fff;
     }
 }
 
@@ -764,35 +762,35 @@ footer {
             font-size: 1.5rem;
         }
         
-        > .card {
+        .card {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             gap: 2rem;
             padding: 1rem;
+        }
             
-            > .card-content {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap: 2rem;
+        .card .card-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
 
-                > .card-title {
-                    font-size: 15px;
-                    font-weight: 600;
-                    color: #fff;
-                    text-align: center;
-                }
+        .card .card-content .card-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: #fff;
+            text-align: center;
+        }
 
-                > .card-desc {
-                    font-size: 10px;
-                    font-weight: 400;
-                    color: #fff;
-                    text-align: center;
-                }
-            }
+        .card .card-content .card-desc {
+            font-size: 10px;
+            font-weight: 400;
+            color: #fff;
+            text-align: center;
         }
     }
 }
