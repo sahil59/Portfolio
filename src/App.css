@@ -271,6 +271,7 @@ section {
     gap: 5rem;
 
     > .about-para{
+        text-align: justify;
         width: 80%;
     }
 

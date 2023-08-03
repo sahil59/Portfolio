@@ -14,10 +14,7 @@ export default function About(){
                 <h2 data-aos="fade-left">ABOUT</h2>
                 <div  className='about-me'>
                     <p data-aos="fade-right" className='about-para'>
-                        Hello, I am Sahil Kumar from final year student from K. J. Somaiya Institute of Technology pursuing my BTech. Degree. I have been working day and night to achieve my goal to become a MERN stack developer.
-                            <br />
-                            <br />
-                        I have been through various Hackathons which not only helped me to strengthen my skills and knowledge but also helped  me to improve teamwork and co-ordinations.                         I have been working on various projects which helped me to improve my skills and knowledge. I have been working on various projects which helped me to improve my skills and knowledge.
+                        Hello, I'm Sahil Kumar, a final year BTech student at K. J. Somaiya Institute of Technology. My passion is to become a MERN stack developer. I've participated in various Hackathons, enhancing my skills, knowledge, and teamwork. Through working on diverse projects, I've honed my abilities as a developer. I'm excited to continue my journey, grow further, and contribute to the world of web development.
                     </p>
                     <div data-aos="fade-left">
                         <img src={myImg} alt=""/>
