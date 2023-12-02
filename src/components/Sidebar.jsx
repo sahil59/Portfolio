@@ -1,56 +1,45 @@
 import React from 'react';
-import CloseIcon from '@mui/icons-material/Close';
+// import CloseIcon from '@mui/icons-material/Close';
 import { HashLink as Link } from 'react-router-hash-link';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import GitHubIcon from '@mui/icons-material/GitHub';
+
 
 export default function Sidebar(props){
     return (
         <>
             <div className={props.open ? "sidebar collapsed" : "sidebar"}>
                 <div className='close-icon' onClick={props.close}>
-                    <CloseIcon/>
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
                 </div>
                 <div className="sidebar-wrapper">
                     <ul>
                         <li>
-                            <Link smooth to="#">
+                            <Link smooth to="#" className='slide-nav-links'>
                                 Home
                             </Link>
                         </li>
                         <li>
-                            <Link smooth to="#about">
+                            <Link smooth to="#about" className='slide-nav-links'>
                                 About
                             </Link>
                         </li>
                         <li>
-                            <Link smooth to="#skills">
+                            <Link smooth to="#skills" className='slide-nav-links'>
                                 Skills
                             </Link>
                         </li>
                         <li>
-                            <Link smooth to="#projects">
+                            <Link smooth to="#projects" className='slide-nav-links'>
                                 Projects
                             </Link>
                         </li>
                         <li>
-                            <Link smooth to="#contact">
+                            <Link smooth to="#contact" className='slide-nav-links'>
                                 Contact
                             </Link>
                         </li>
                     </ul>
-                </div>
-                <div className='sidebar-social'>
-                    <Link to="https://www.linkedin.com/in/sahil-kumar14/" target='blank' className='social-icon'>
-                        <LinkedInIcon/>
-                    </Link>
-                    <Link to="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=sahil.kumar@somaiya.edu" target='blank' className='social-icon'>
-                        <EmailOutlinedIcon/>
-                    </Link>
-                    <Link to="https://github.com/sahil59" target='blank' className='social-icon'>
-                        <GitHubIcon/>
-                    </Link>
                 </div>
             </div>
         </>

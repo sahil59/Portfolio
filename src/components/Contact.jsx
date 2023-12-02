@@ -2,9 +2,9 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
+// import LocationOnIcon from '@mui/icons-material/LocationOn';
+// import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+// import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
 
 
 const Alert = React.forwardRef(function Alert(props, ref) {
@@ -37,6 +37,7 @@ export default function Contact() {
                 document.getElementsByName('user_name')[0].value = '';
                 document.getElementsByName('user_email')[0].value = '';
                 document.getElementsByName('message')[0].value = '';
+                document.getElementsByName('message')[0].value = '';
             })
             .catch((error) => {
                 // alert("Form Submission Failed!");
@@ -51,28 +52,58 @@ export default function Contact() {
     return (
         <>
             <section id='contact' className='contact-sec'>
-                <h2 data-aos="fade-left">CONTACT</h2>
-                <div data-aos="fade-right" className='contact'>
+                <h2>Contact</h2>
+                <div className='contact'>
                     <div className='contact-info'>
-                        <h3>CONTACT INFO</h3>
-                        <p>
-                            <span><LocationOnIcon sx={{ fontSize: "20px" }} /> Mumbai, India</span>
-                            <br />
-                            <br />
-                            <span><EmailOutlinedIcon sx={{ fontSize: "20px" }} /> sahil.kumar@somaiya.edu</span>
-                            <br />
-                            <br />
-                            <span><CallOutlinedIcon sx={{ fontSize: "20px" }} /> +91 9326230242</span>
-                        </p>
+                        <span>
+                            <p>
+                                <span class="material-symbols-outlined">
+                                    location_on
+                                </span>
+                                Location
+                            </p>
+                            <div>
+                                Mumbai, India
+                            </div>
+                        </span>
+                        <span>
+                            <p>
+                                <span class="material-symbols-outlined">
+                                    mail
+                                </span>
+                                E-mail
+                            </p>
+                            <div>
+                                sahil.kumar@somaiya.edu
+                            </div>
+                        </span>
+                        <span>
+                            <p>
+                                <span class="material-symbols-outlined">
+                                    smartphone
+                                </span>
+                                Phone
+                            </p>
+                            <div>
+                                +91 9326230242
+                            </div>
+                        </span>
                     </div>
-                    <div className='divider'></div>
                     <div className='contact-form'>
-                        <h3>SEND A MESSAGE</h3>
+                        <h3>Contact form</h3>
                         <form className='form' ref={refForm} onSubmit={sendEmail}>
-                            <input type="text" placeholder="Name" name='user_name' required/>
-                            <input type="email" placeholder="Email" name='user_email' required/>
-                            <textarea placeholder="Message" cols="10" rows="4" name='message' required></textarea>
-                            <input type="submit" value="Send"/>
+                            <div>
+                                <input type="text" placeholder="Name" name='user_name' required />
+                                <input type="email" placeholder="Email" name='user_email' required />
+                                <textarea placeholder="Message" cols="10" rows="4" name='message' required></textarea>
+                            </div>
+                            {/* <input type="submit" value="Send" /> */}
+                            <button type="submit">
+                                <span class="material-symbols-outlined">
+                                    send
+                                </span>
+                                Send
+                            </button>
                         </form>
                     </div>
                 </div>

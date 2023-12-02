@@ -1,6 +1,4 @@
 import React, {useEffect} from 'react';
-import MenuIcon from '@mui/icons-material/Menu';
-// import CloseIcon from '@mui/icons-material/Close';
 import { HashLink as Link } from 'react-router-hash-link';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -9,45 +7,61 @@ export default function Navbar(props){
     useEffect(() => { 
         AOS.init({duration: 1000});
     }, [])
+
+    // const [theme, setTheme] = useState('light');
+    // const [icon, setIcon] = useState('light_mode');
+
+    // const toggleTheme = () => {
+    //     if(theme === 'light'){
+    //         setTheme('dark');
+    //         setIcon('dark_mode');
+    //     } else {
+    //         setTheme('light');
+    //         setIcon('light_mode');
+    //     }
+    // }
+
     return (
         <>
-            <nav data-aos="fade-down">
-                <div className="nav-wrapper">
-                    <Link to="#" className="brand-logo">
-                        SK
-                    </Link>
-                    <ul id="nav-mobile" className="right">
+            <nav>
+                {/* <div className="nav-wrapper"> */}
+                <ul className="nav-items">
                         <li>
-                            <Link smooth to="#">
+                            <Link smooth to="#" className='nav-links'>
                                 Home
                             </Link>
                         </li>
                         <li>
-                            <Link smooth to="#about" >
+                        <Link smooth to="#about" className='nav-links'>
                                 About
                             </Link>
                         </li>
                         <li>
-                            <Link smooth to="#skills" >
+                        <Link smooth to="#skills" className='nav-links'>
                                 Skills
                             </Link>
                         </li>
                         <li>
-                            <Link smooth to="#projects">
+                        <Link smooth to="#projects" className='nav-links'>
                                 Projects
                             </Link>
                         </li>
                         <li>
-                            <Link smooth to="#contact">
+                        <Link smooth to="#contact" className='nav-links'>
                                 Contact
                             </Link>
                         </li>
                         
                     </ul>
                     <div className='menu-icon' onClick={props.click}>
-                        <MenuIcon />
+                        <span class="material-symbols-outlined">
+                            menu
+                        </span>
                     </div>
-                </div>
+                    {/* <span className="material-symbols-outlined theme-icon" onClick={toggleTheme}>
+                        {icon}
+                    </span> */}
+                {/* </div> */}
             </nav>
         </>
     );
