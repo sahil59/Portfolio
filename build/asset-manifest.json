@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.9ba9fc36.css",
-    "main.js": "/static/js/main.f3d92f69.js",
+    "main.css": "/static/css/main.61944b5b.css",
+    "main.js": "/static/js/main.c60060a8.js",
     "static/media/coworking-male-programmer-writing-program-code.gif": "/static/media/coworking-male-programmer-writing-program-code.dbf5d0a1077c0e4f472a.gif",
     "static/media/Sahil Kumar Resume.pdf": "/static/media/Sahil Kumar Resume.c9424a874915351ff0af.pdf",
     "static/media/1690804412682.jpg": "/static/media/1690804412682.d77b91a231fc447ea083.jpg",
     "index.html": "/index.html",
-    "main.9ba9fc36.css.map": "/static/css/main.9ba9fc36.css.map",
-    "main.f3d92f69.js.map": "/static/js/main.f3d92f69.js.map"
+    "main.61944b5b.css.map": "/static/css/main.61944b5b.css.map",
+    "main.c60060a8.js.map": "/static/js/main.c60060a8.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ba9fc36.css",
-    "static/js/main.f3d92f69.js"
+    "static/css/main.61944b5b.css",
+    "static/js/main.c60060a8.js"
   ]
 }

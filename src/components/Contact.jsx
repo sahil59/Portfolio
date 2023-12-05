@@ -2,10 +2,6 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
-// import LocationOnIcon from '@mui/icons-material/LocationOn';
-// import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-// import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
-
 
 const Alert = React.forwardRef(function Alert(props, ref) {
     return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
@@ -40,7 +36,6 @@ export default function Contact() {
                 document.getElementsByName('message')[0].value = '';
             })
             .catch((error) => {
-                // alert("Form Submission Failed!");
                 setSnackbarSeverity('error');
                 setSnackbarOpen(true);
                 document.getElementsByName('user_name')[0].value = '';
@@ -97,7 +92,6 @@ export default function Contact() {
                                 <input type="email" placeholder="Email" name='user_email' required />
                                 <textarea placeholder="Message" cols="10" rows="4" name='message' required></textarea>
                             </div>
-                            {/* <input type="submit" value="Send" /> */}
                             <button type="submit">
                                 <span class="material-symbols-outlined">
                                     send

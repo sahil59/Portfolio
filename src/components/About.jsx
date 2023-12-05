@@ -1,13 +1,8 @@
 import React from 'react';
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
 import myImg from '../assets/1690804412682.jpg'
 import Resume from '../assets/Sahil Kumar Resume.pdf';
 
 export default function About(){
-    // useEffect(() => { 
-    //     AOS.init({duration: 1000});
-    // }, [])
     
     return(
         <>
